@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Restaurant website template with html and css</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+	<!-- custom css file link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+		<a href="#" class="logo"><img src="img/Logo12.jpg" style="width: 80px;filter: sepia(100%);"></a>
+
+		<nav class="navbar">
+			<a href="#home" class="active">home</a>
+			<a href="#about">about</a>
+			<a href="#Menu">Menu</a>
+            <a href="#Clients">Clients</a>
+            <a href="#gallery">gallery</a>
+            <a href="#Review">Review</a>
+            <a href="#Events">Events</a>
+			<a href="#reservation">reservation</a>
+			<a href="#Contact">Contact</a>
+		</nav>
+
+		<div class="icons">
+			<i class="fas fa-bars" id="menu"></i>
+			<i class="fas fa-search"></i>
+			<i class="fas fa-heart"></i>
+			<i class="fas fa-shopping-cart"></i>
+		</div>
+	</header>
+	<!-- header section end -->
+
+	<!-- Home section start -->
+    <div class="home" id="home">
+		<div class="swiper home-slider">
+			<div class="swiper-wrapper wrapper">
+				<div class="swiper-slide slide slide1">
+					<div class="content">
+                        <div class="content1">
+                            <h3>We are open</h3>
+                            <h1>Welcome to <br>our restaurant</h1>
+                            <p>Everything you want you will find with us here</p>
+                            <a href="#" class="btn">order now</a>
+                        </div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide slide2">
+					<div class="content">
+                        <div class="content2">
+                            <h3>sale of 20% this dish</h3>
+						    <h1>the fresh</h1>
+                            <p>food restaurant</p>
+						    <a href="#" class="btn">order now</a>
+                        </div>
+					</div>
+				</div>
+
+				<div class="swiper-slide slide slide3">
+					<div class="content">
+                        <div class="content3">
+						    <h3>we are open</h3>
+						    <h1>Fresh Food</h1>
+                            <p>you will love it</p>
+						    <a href="#" class="btn">order now</a>
+                        </div>
+					</div>
+				</div>
+
+                
+				<div class="swiper-slide slide slide4">
+					<div class="content">
+                        <div class="content4">
+						   <h3>sale of 20% this dish</h3>
+						   <h1>the fresh</h1>
+                           <p>food restaurant</p>
+						   <a href="#" class="btn">order now</a>
+                        </div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<!-- Home section ends -->
+    
+    <!-- About Section start-->
+    <section class="section about" id="about">
+        <div class="about-content container">
+            <div class="about-imageContent">
+                <img src="img/About2.jpg" alt="" class="about-img">
+                <div class="aboutImg-textBox">
+                    <p class="content-description">I really love your restaurant. Every day you upload new dishes and fresh food.</p>
+                </div>
+            </div>
+            
+            <div class="about-details">
+                <div class="about-text">
+                    <h4 class="content-subtitle">
+                        <i>Our delicious restaurant</i>
+                    </h4>
+                    <h2 class="content-title">Our restaurant has different flavors and competitive prices.</h2>
+                    <p class="content-description">We appreciate your trust greatly. Our clients choose us and our products because theyknow we are the best.</p>
+                </div>
+
+                <div class="about-buttons flex">
+                    <button class="button">About Us</button>
+                    <a href="#" class="about-link flex">
+                        <span class="link-text">see more</span>
+                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end-->
+
+
+    <!-- Menu Section Start-->
+    <section class="menu section-bg" id="Menu">
+        <div class="container" data-aos="fade-up">
+      
+            <div class="section-title">
+                <p>-* Menu *-</p> 
+            </div>
+      
+            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+      
+            <div class="col-lg-6 menu-item filter-starters">
+                <img src="img/Menu27.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Hamburger</a><span>$6.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati veniam doloremque rem unde ut ad aliquam, ullam suscipit architecto ipsam, quae inventore dignissimos eos adipisci voluptas tenetur eius beatae!
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-specialty">
+                <img src="img/Menu3.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">grilled meet</a><span>$26.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex distinctio aspernatur vero cumque officiis, culpa odit voluptatum perferendis, quod labore illum voluptatibus saepe aperiam repellendus ipsa doloremque commodi eveniet ducimus?
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-starters">
+                <img src="img/Menu5.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">soup</a><span>$10.75</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia dolor cupiditate sunt facere. Perferendis totam quas quisquam veniam quod cum dolor animi adipisci harum! Animi quas tenetur odit quis quo!
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-salads">
+                <img src="img/Menu12.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">kebab</a><span>$18.35</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita nesciunt quisquam saepe in quod nam eligendi suscipit laudantium atque mollitia necessitatibus minima perspiciatis ducimus repudiandae, soluta fuga amet deserunt.
+                  </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-specialty">
+                <img src="img/Menu28.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Tuscan Grilled</a><span>$29.65</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in expedita, quisquam molestias non perferendis earum reiciendis delectus, dolorem nesciunt molestiae quod impedit, natus neque sunt assumenda excepturi minus dolores.
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-starters">
+                <img src="img/Menu8.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Pizza</a><span>$14.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellendus repellat est neque maiores corporis nobis, minus, inventore aliquid fuga distinctio quaerat voluptate nam iusto numquam rem consequuntur vel nisi.
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-salads">
+                <img src="img/Menu17.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Grilled chicken broasted</a><span>$20.38</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore amet aperiam saepe sed beatae. Vitae possimus ab quae! Voluptate recusandae autem officiis laudantium asperiores sed magni doloribus molestias rerum earum?
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-salads">
+                <img src="img/Menu9.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Chicken wrap</a><span>$15.25</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam architecto fugit earum dolores beatae! Minima delectus odio veritatis suscipit unde doloribus inventore expedita quibusdam atque nemo. Doloribus veritatis quisquam nobis!
+                </div>
+            </div>
+      
+            <div class="col-lg-6 menu-item filter-specialty">
+                <img src="img/Menu25.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Fish</a><span>$13.25</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nihil molestias dolorem quisquam recusandae neque soluta excepturi vel accusantium ullam odio rerum deleniti est natus, quasi maiores id quidem ex.
+                </div>
+            </div>
+    
+            <div class="col-lg-6 menu-item filter-specialty">
+                <img src="img/Menu31.webp" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Lobster Roll</a><span>$12.95</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est similique, deserunt aut consequatur beatae eos, ullam magni impedit ratione reiciendis, fuga facilis quos soluta doloribus laborum corrupti earum quas.
+                </div>
+            </div>
+      
+            </div>
+      
+        </div>
+    </section>
+    <!-- Menu Section end-->
+       
+     <!-- clients Section Start-->
+    <section class="section Clients" id="Clients">
+        <div class="swiper home-slider">
+			<div class="swiper-wrapper wrapper">
+
+				<div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients11.webp" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Restaurant Manager</h2>
+                                <p class="content-description">is the person in charge of the restaurant. In small restaurants, the manager is usually the owner
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients9.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Restaurant administrator</h2>
+                                <p class="content-description">  He is the person responsible for the restaurant's accounts. He works in constant contact with accountants and bank accounts, where he is primarily responsible for managing the facility’s capital and ensuring that it is used in the best possible way.
+                                    <br><br>In addition, he is usually also responsible for hiring and firing employees, payroll, daily earnings, and everything related to the profits or losses of the organization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients12.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Chef's assistants</h2>
+                                <p class="content-description">  They are responsible for all kinds of functions important to the operation of each station, without being directly responsible for cooking or preparing any dish.
+                                    <br><br>They are responsible for setting up the work area, and organizing and cleaning each preparation table based on the orders of station cooks.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients1.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">receptionist</h2>
+                                <p class="content-description">The receptionist is the person responsible for greeting guests and checking their reservation - and also organizing their entry and dress code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients10.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Executive Chef.</h2>
+                                <p class="content-description">The head chef is the third most important role in a restaurant.He is part of the administrative staff and one of the most important roles in the kitchen.
+                                <br><br>Create a menu that all diners will love: from the oldest to the youngest.
+                                <br>Directs all kitchen staff and their various stations.
+                                <br>Make managerial decisions about what is served in the restaurant.
+                                <br>Ensuring the efficiency of the kitchen staff.
+                                <br>He is in contact with all the different roles in the restaurant: from the restaurant manager to the cleaning staff.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients6.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Bar staff</h2>
+                                <p class="content-description">Specifically dedicated to dealing with customers and preparing cocktails on the drinks menu or according to their desire. This person must have extensive knowledge of mixing and preparation techniques for various drinks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients2.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Head waiter of a restaurant</h2>
+                                <p class="content-description">They are responsible for bringing the orders to the kitchen and delivering the dishes once they are ready. In small restaurants, they also clean and rearrange the table once the guests leave. In addition to other tasks such as handing the bill to diners, receiving complaints or compliments, communicating them to the kitchen staff, and sometimes even preparing invoices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients4.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Delivery representative</h2>
+                                <p class="content-description">The delivery representative receives the goods and orders from the facility, obtains directions to the delivery location and customer notes, and then sets out to deliver them to the person who requested them.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="Clients-content container">
+                        <div class="Clients-imageContent">
+                            <img src="img/Clients7.jpg" alt="" class="Clients-img">
+                        </div>
+                        
+                        <div class="Clients-details">
+                            <div class="Clients-text">
+                                <h2 class="content-title">Kitchen manager</h2>
+                                <p class="content-description"> Responsible for taking a complete inventory of everything in the kitchen - he must ensure that all ingredients are available.
+                                    <br><br>In large restaurants, there is a kitchen manager position.
+                                    In small establishments, the duties of this position are undertaken by the manager, the head chef, or are divided between both.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- clients Section end-->
+
+
+    <!-- gallery Section Start-->
+    <section class="gallery" id="gallery">
+        <div class="gallery">
+
+        <h1>Gallery</h1>
+
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery5.webp" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery7.webp" alt="">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery10.webp" alt="" style= "height: 50rem;">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery6.webp" alt="" style="height: 50rem;">
+                </div>
+            </div>
+
+            <div class="inner-gallery">
+                <div class="gallery-image">
+                    <img src="img/gallery2.webp" alt="" style="height: 50rem;">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- gallery Section end-->
+
+    <!-- reservation section start -->
+    <section class="reservation" id="reservation">
+        <div class="image"></div>
+        <div class="form">
+            <h1 class="heading">book a table</h1>
+            <center><h3 class="sub-heading">~ check out our place ~ </h3></center>
+            
+            <form>
+                <div class="form-holder">
+                    <div>
+                        <select>
+                            <option>1 people</option>
+                            <option>2 people</option>
+							<option>3 people</option>
+							<option>4 people</option>
+						</select>
+                        
+                        <input type="text" name="" placeholder="Time">
+						<input type="text" name="" placeholder="Phone">
+					</div>
+
+					<div>
+						<input type="text" name="" placeholder="Date">
+						<input type="text" name="" placeholder="Name">
+						<input type="email" name="" placeholder="email">
+					</div>
+				</div>
+				<center><a href="#" class="btn">Book now</a></center>
+			</form>
+		</div>
+    </section>
+	<!-- reservation section ends -->
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 7500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        loop:true,
+      });
+    </script>
+</body>
+</html>

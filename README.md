@@ -1,1 +1,11 @@
  Restaurant_website
+- project map
+  - home 
+  - about 
+  - menue 
+  - clients
+  - gallery 
+  - review
+  - events
+  - reservation 
+  - contact

@@ -33,12 +33,20 @@
 
 		<div class="icons">
 			<i class="fas fa-bars" id="menu"></i>
-			<i class="fas fa-search"></i>
+			<i class="fas fa-search" id="search-icon"></i>
 			<i class="fas fa-heart"></i>
 			<i class="fas fa-shopping-cart"></i>
 		</div>
 	</header>
 	<!-- header section end -->
+
+    <!-- search form -->
+
+    <form action="" id="search-form">
+        <input type="search" placeholder="Search here..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
 
 	<!-- Home section start -->
     <div class="home" id="home">
@@ -835,7 +843,16 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".home-slider", {
+    
+    document.querySelector('#search-icon').onclick = () =>{
+    document.querySelector('#search-form').classList.toggle('active')
+    }
+
+    document.querySelector('#close').onclick = () =>{
+    document.querySelector('#search-form').classList.remove('active')
+    }
+
+    var swiper = new Swiper(".home-slider", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
@@ -847,9 +864,9 @@
           clickable: true,
         },
         loop:true,
-      });
+    });
 
-        var swiper = new Swiper(".review-slider", {
+    var swiper = new Swiper(".review-slider", {
         spaceBetween: 20,
         loop:true,
         autoplay: {
@@ -871,4 +888,4 @@
     
     </script>
 </body>
-</html>  
+</html>

@@ -16,7 +16,8 @@
 <body>
     <!-- header section start -->
     <header>
-		<a href="#" class="logo"><img src="img/Logo12.jpg" style="width: 80px;filter: sepia(100%);"></a>
+		<!--<a href="#" class="logo"><img src="img/logo13.webp" style="width: 80px;filter: sepia(100%);"></a>-->
+        <a href="#" class="logo">Restaurant</a>
 
 		<nav class="navbar">
 			<a href="#home" class="active">home</a>
@@ -24,7 +25,7 @@
 			<a href="#Menu">Menu</a>
             <a href="#Clients">Clients</a>
             <a href="#gallery">gallery</a>
-            <a href="#Review">Review</a>
+            <a href="#review">Review</a>
             <a href="#Events">Events</a>
 			<a href="#reservation">reservation</a>
 			<a href="#Contact">Contact</a>
@@ -117,7 +118,7 @@
                     <button class="button">About Us</button>
                     <a href="#" class="about-link flex">
                         <span class="link-text">see more</span>
-                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                        <i class="fa fa-long-arrow-right about-arrowIcon" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -125,119 +126,115 @@
     </section>
     <!-- About Section end-->
 
-
     <!-- Menu Section Start-->
     <section class="menu section-bg" id="Menu">
         <div class="container" data-aos="fade-up">
       
             <div class="section-title">
-                <p>-* Menu *-</p> 
+                <p>* Menu *</p> 
             </div>
       
-            <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="row menu-container">
+                <div class="col-1 menu-item filter-starters">
+                    <img src="img/Menu27.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Hamburger</a><span>$6.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati veniam doloremque rem unde ut ad aliquam, ullam suscipit architecto ipsam, quae inventore dignissimos eos adipisci voluptas tenetur eius beatae!
+                    </div>
+                </div>
       
-            <div class="col-lg-6 menu-item filter-starters">
-                <img src="img/Menu27.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Hamburger</a><span>$6.95</span>
+                <div class="col-2 menu-item filter-specialty"> <!--col-lg-6-->
+                    <img src="img/Menu3.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">grilled meet</a><span>$26.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex distinctio aspernatur vero cumque officiis, culpa odit voluptatum perferendis, quod labore illum voluptatibus saepe aperiam repellendus ipsa doloremque commodi eveniet ducimus?
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati veniam doloremque rem unde ut ad aliquam, ullam suscipit architecto ipsam, quae inventore dignissimos eos adipisci voluptas tenetur eius beatae!
-                </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="img/Menu3.jpg" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">grilled meet</a><span>$26.95</span>
+                <div class="col-3 menu-item filter-starters">
+                    <img src="img/Menu5.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">soup</a><span>$10.75</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia dolor cupiditate sunt facere. Perferendis totam quas quisquam veniam quod cum dolor animi adipisci harum! Animi quas tenetur odit quis quo!
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex distinctio aspernatur vero cumque officiis, culpa odit voluptatum perferendis, quod labore illum voluptatibus saepe aperiam repellendus ipsa doloremque commodi eveniet ducimus?
+                
+                <div class="col-4 menu-item filter-salads">
+                    <img src="img/Menu12.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">kebab</a><span>$18.35</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita nesciunt quisquam saepe in quod nam eligendi suscipit laudantium atque mollitia necessitatibus minima perspiciatis ducimus repudiandae, soluta fuga amet deserunt.
+                    </div>
                 </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-starters">
-                <img src="img/Menu5.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">soup</a><span>$10.75</span>
+                <div class="col-5 menu-item filter-specialty">
+                    <img src="img/Menu28.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Tuscan Grilled</a><span>$29.65</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in expedita, quisquam molestias non perferendis earum reiciendis delectus, dolorem nesciunt molestiae quod impedit, natus neque sunt assumenda excepturi minus dolores.
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia dolor cupiditate sunt facere. Perferendis totam quas quisquam veniam quod cum dolor animi adipisci harum! Animi quas tenetur odit quis quo!
-                </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-salads">
-                <img src="img/Menu12.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">kebab</a><span>$18.35</span>
+                <div class="col-6 menu-item filter-starters">
+                    <img src="img/Menu8.jpg" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Pizza</a><span>$14.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellendus repellat est neque maiores corporis nobis, minus, inventore aliquid fuga distinctio quaerat voluptate nam iusto numquam rem consequuntur vel nisi.
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam expedita nesciunt quisquam saepe in quod nam eligendi suscipit laudantium atque mollitia necessitatibus minima perspiciatis ducimus repudiandae, soluta fuga amet deserunt.
-                  </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="img/Menu28.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Tuscan Grilled</a><span>$29.65</span>
+                <div class="col-7 menu-item filter-salads">
+                    <img src="img/Menu17.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Grilled chicken broasted</a><span>$20.38</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore amet aperiam saepe sed beatae. Vitae possimus ab quae! Voluptate recusandae autem officiis laudantium asperiores sed magni doloribus molestias rerum earum?
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis in expedita, quisquam molestias non perferendis earum reiciendis delectus, dolorem nesciunt molestiae quod impedit, natus neque sunt assumenda excepturi minus dolores.
-                </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-starters">
-                <img src="img/Menu8.jpg" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Pizza</a><span>$14.95</span>
+                <div class="col-8 menu-item filter-salads">
+                    <img src="img/Menu9.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Chicken wrap</a><span>$15.25</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam architecto fugit earum dolores beatae! Minima delectus odio veritatis suscipit unde doloribus inventore expedita quibusdam atque nemo. Doloribus veritatis quisquam nobis!
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae repellendus repellat est neque maiores corporis nobis, minus, inventore aliquid fuga distinctio quaerat voluptate nam iusto numquam rem consequuntur vel nisi.
-                </div>
-            </div>
       
-            <div class="col-lg-6 menu-item filter-salads">
-                <img src="img/Menu17.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Grilled chicken broasted</a><span>$20.38</span>
+                <div class="col-9 menu-item filter-specialty">
+                    <img src="img/Menu25.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Fish</a><span>$13.25</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nihil molestias dolorem quisquam recusandae neque soluta excepturi vel accusantium ullam odio rerum deleniti est natus, quasi maiores id quidem ex.
+                    </div>
                 </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore amet aperiam saepe sed beatae. Vitae possimus ab quae! Voluptate recusandae autem officiis laudantium asperiores sed magni doloribus molestias rerum earum?
-                </div>
-            </div>
-      
-            <div class="col-lg-6 menu-item filter-salads">
-                <img src="img/Menu9.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Chicken wrap</a><span>$15.25</span>
-                </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam architecto fugit earum dolores beatae! Minima delectus odio veritatis suscipit unde doloribus inventore expedita quibusdam atque nemo. Doloribus veritatis quisquam nobis!
-                </div>
-            </div>
-      
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="img/Menu25.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Fish</a><span>$13.25</span>
-                </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nihil molestias dolorem quisquam recusandae neque soluta excepturi vel accusantium ullam odio rerum deleniti est natus, quasi maiores id quidem ex.
-                </div>
-            </div>
     
-            <div class="col-lg-6 menu-item filter-specialty">
-                <img src="img/Menu31.webp" class="menu-img" alt="">
-                <div class="menu-content">
-                    <a href="#">Lobster Roll</a><span>$12.95</span>
-                </div>
-                <div class="menu-ingredients">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est similique, deserunt aut consequatur beatae eos, ullam magni impedit ratione reiciendis, fuga facilis quos soluta doloribus laborum corrupti earum quas.
+                <div class="col-10 menu-item filter-specialty">
+                    <img src="img/Menu31.webp" class="menu-img" alt="">
+                    <div class="menu-content">
+                        <a href="#">Lobster Roll</a><span>$12.95</span>
+                    </div>
+                    <div class="menu-ingredients">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est similique, deserunt aut consequatur beatae eos, ullam magni impedit ratione reiciendis, fuga facilis quos soluta doloribus laborum corrupti earum quas.
+                    </div>
                 </div>
             </div>
-      
-            </div>
-      
         </div>
     </section>
     <!-- Menu Section end-->
@@ -251,6 +248,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients11.webp" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Mark Jackson</h3>
+                                    <span>Restaurant Manager</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -267,6 +278,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients9.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Amaia Koji Takahashi</h3>
+                                    <span>Restaurant administrator</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -284,6 +309,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients12.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Maria Omar</h3>
+                                    <span>Chef's assistants</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -301,6 +340,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients1.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Sarah Muhammad</h3>
+                                    <span>receptionist</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -316,11 +369,25 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients10.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Marwan Abdel Aziz</h3>
+                                    <span>Executive Chef</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
                             <div class="Clients-text">
-                                <h2 class="content-title">Executive Chef.</h2>
+                                <h2 class="content-title">Executive Chef</h2>
                                 <p class="content-description">The head chef is the third most important role in a restaurant.He is part of the administrative staff and one of the most important roles in the kitchen.
                                 <br><br>Create a menu that all diners will love: from the oldest to the youngest.
                                 <br>Directs all kitchen staff and their various stations.
@@ -337,6 +404,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients6.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Jana Wilsson</h3>
+                                    <span>Bar staff</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -352,6 +433,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients2.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Eman Karam</h3>
+                                    <span>Head waiter</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -367,6 +462,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients4.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Yasser Mohamed</h3>
+                                    <span>Delivery representative</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -382,6 +491,20 @@
                     <div class="Clients-content container">
                         <div class="Clients-imageContent">
                             <img src="img/Clients7.jpg" alt="" class="Clients-img">
+
+                            <div class="chef-info">
+                                <div>
+                                    <h3>Lara Oliver</h3>
+                                    <span>Kitchen manager</span>
+            
+                                    <ul>
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="Clients-details">
@@ -400,7 +523,6 @@
         </div>
     </section>
     <!-- clients Section end-->
-
 
     <!-- gallery Section Start-->
     <section class="gallery" id="gallery">
@@ -449,13 +571,233 @@
     </section>
     <!-- gallery Section end-->
 
+    <!-- review section starts  -->
+    <section class="review" id="review">
+        <h3> What People Say About Us</h3>
+        <div class="box-container">
+            <div class="swiper-container review-slider">
+                <div class="swiper-wrapper">
+        
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people1.webp">
+                                    <p class="p1">Mark Walter</p>
+                                    <p class="p2">500k Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/Menu25.webp" alt="">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>350k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>283,751</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people2.webp">
+                                    <p class="p1">Carolyn William</p>
+                                    <p class="p2">195,235 Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/review2.webp" alt="">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>120k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>79,538</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people3.webp">
+                                    <p class="p1">Jack Stephen</p>
+                                    <p class="p2">250k Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/Menu12.webp" alt="" height="10%">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>183k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>170,253</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people4.webp">
+                                    <p class="p1">Angela Victor</p>
+                                    <p class="p2">215,368 Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/Menu8.jpg" alt="">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>187k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>197,035</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people5.webp">
+                                    <p class="p1">Peter Jacob</p>
+                                    <p class="p2">152,765 Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/Menu16.webp" alt="">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>80k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>63,417</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="content">
+                                
+                                <div class="user-review">
+                                    <img src="img/people6.webp">
+                                    <p class="p1">Christine Daniel</p>
+                                    <p class="p2">130k Follower</p>
+                                    <a href="#"><i class="fa fa-bookmark" aria-hidden="true"></i></a>
+                                </div>
+                               <div class="stars">
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star"></i>
+                                   <i class="fas fa-star-half-alt"></i>
+                               </div>
+                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                  Quod soluta aliquid labore rerum aut a minus non numquam excepturi, 
+                                  laboriosam id qui ut odio vero iure nam aperiam libero odit!
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/Menu3.jpg" alt="">
+                                <a href="#" class="fas fa-heart"></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-solid fa-heart"></i>52k</a>
+                                <a href="#"><i class="fa-solid fa-comment"></i>20,751</a>
+                                <a href="#"><i class="fa-solid fa-share"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+
+
+
+
+
+
     <!-- reservation section start -->
     <section class="reservation" id="reservation">
         <div class="image"></div>
         <div class="form">
             <h1 class="heading">book a table</h1>
-            <center><h3 class="sub-heading">~ check out our place ~ </h3></center>
-            
             <form>
                 <div class="form-holder">
                     <div>
@@ -490,6 +832,7 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".home-slider", {
@@ -505,6 +848,27 @@
         },
         loop:true,
       });
+
+        var swiper = new Swiper(".review-slider", {
+        spaceBetween: 20,
+        loop:true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+    
     </script>
 </body>
-</html>
+</html>  

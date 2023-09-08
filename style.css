@@ -121,12 +121,14 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #333;
-	padding: 1rem 7%;
+	padding: 1rem 9%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+  border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+  background: rgba(12, 11, 9, 0.6);
+  transition: all 0.5s;
 	z-index: 100;
 }
 header .logo {
@@ -153,19 +155,14 @@ header .icons i {
 	width: 4.5rem;
 	line-height: 4.5rem;
 	background: #cdaa7c;
+  border-radius: 50%;
 	text-align: center;
 	font-size: 1.7rem;
 	color: #fff;
 }
-header .icons i:hover {
-	color: #fff;
-	background: #cdaa7c;
-	transform: rotate(360deg);
-}
 header .icons #menu {
 	display: none;
 }
-
 #search-form{
   position: fixed;
   top: -110%; left: 0;
@@ -176,12 +173,11 @@ header .icons #menu {
   align-items: center;
   justify-content: center;
   padding: 0 1rem;
+  transition: all 0.5s ease-in;
 }
-
 #search-form.active{
   top: 0;
 }
-
 #search-form #search-box{
   width: 50rem;
   border-bottom: .1rem solid #fff;
@@ -191,25 +187,20 @@ header .icons #menu {
   text-transform: none;
   background: none;
 }
-
 #search-form #search-box::placeholder{
   color: #eee;
 }
-
 #search-form #search-box::-webkit-search-cancel-button{
   -webkit-appearance:none;
 }
-
 #search-form label{
   color: #fff;
   cursor: pointer;
   font-size: 3rem;
 }
-
 #search-form label:hover{
   color: var(--green);
 }
-
 #search-form #close{
   position: absolute;
   color: #fff;
@@ -223,20 +214,29 @@ header .icons #menu {
 .home .home-slider .slide {
 	display: flex;
 	align-items: center;
-	height: 95vh;
+	height: 100vh;
 	justify-content: flex-start;
 }
+.home .home-slider .slide:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .home .home-slider .slide1 {
-	background: url(img/Home1.webp);
+	background: url(img/restaurant5.jpg);
 }
 .home .home-slider .slide2 {
-	background: url(img/Home2.jpg);
+	background: url(img/restaurant3.jpg);
 }
 .home .home-slider .slide3 {
-	background: url(img/Home9.webp);
+	background: url(img/restaurant10.jpg);
 }
 .home .home-slider .slide4 {
-	background: url(img/Home13.webp);
+	background: url(img/restaurant7.jpg);
 }
 .home .home-slider .slide1,
 .home .home-slider .slide2,
@@ -249,16 +249,14 @@ header .icons #menu {
 	text-align: center;
 	padding-left: 9rem;
 }
-.home .home-slider .slide .content .content1 {
-    margin-top: 150px;
-}
+
 .home .home-slider .slide .content .content2 {
-    margin-left: 500px;
-    margin-top: 150px;
+  margin-left: 450px;
+  margin-top: 100px;
 }
-.home .home-slider .slide .content .content3 {
-    margin-left: 150px;
-    margin-top: 45px;
+.home .home-slider .slide .content .content4 {
+  margin-left: 50px;
+  margin-top: -30px;
 }
 .home .home-slider .slide .content h3 {
 	color: #cdaa7c;
@@ -325,6 +323,23 @@ header .icons #menu {
   align-items: center;
   padding: 0 3rem;
 }
+
+.about-heading, 
+.clients-heading,
+.review-heading {
+  color: #c2703d48;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 130px;
+  text-align: center;
+  margin-bottom: 8rem;
+  margin-top: -100px;
+}
+
+.review-heading {
+  margin: 0;
+}
+
 .about-imageContent {
   position: relative;
   max-width: 450px; 
@@ -575,23 +590,28 @@ section {
 }
 .inner-gallery {
   flex: 1 1 300px;  
+  overflow: hidden;
+  border-right: 3px solid #333;
+  border-bottom: 3px solid #333;
 }
 .inner-gallery .gallery-image img {
   width: 100%;
+
+  transition: all ease-in-out 0.4s;
 }
 .inner-gallery .gallery-image:hover img {
-  transform: perspective(1000px) rotateX(-4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+  transform: scale(1.1);
 }
 /*Gallery style end*/
 
 /*Review style start*/
-.review h3 {
+.review h3{
   text-align: center;
   color: #C2703D;
   font-size: 4rem;
   padding: 3rem;
-  margin: 3rem;
+  margin: 0rem;
+  transform: translateY(-90px);
 }
 .review .box-container{
   display: grid;

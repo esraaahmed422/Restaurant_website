@@ -199,7 +199,7 @@ header .icons #menu {
   font-size: 3rem;
 }
 #search-form label:hover{
-  color: var(--green);
+  color: #C2703D;
 }
 #search-form #close{
   position: absolute;
@@ -341,11 +341,9 @@ header .icons #menu {
   margin-bottom: 8rem;
   margin-top: -100px;
 }
-
 .review-heading {
   margin: 0;
 }
-
 .reservation-heading,
 .gallery-heading {
   margin: 20px auto;
@@ -417,6 +415,57 @@ header .icons #menu {
   margin-left: 4px;
 }
 /* About Style end*/
+
+/* why us Style start*/
+.row {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 3rem;
+  padding: 0rem 0rem;
+  margin-left: -150px;
+}
+.why-us .section-title p {
+  margin-left: 50px;
+}
+.why-us .box {
+  padding: 50px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background: #1a1814;
+}
+.why-us .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #cda45e;
+}
+.why-us .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.why-us .box p {
+  width: 350px;
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  line-height: 2.5rem;
+}
+.why-us .box:hover {
+  background: #cda45e;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+.why-us .box:hover span,
+.why-us .box:hover h4,
+.why-us .box:hover p {
+  color: #fff;
+}
+/* why us Style send*/
 
 /* Menu Style start*/
 section {

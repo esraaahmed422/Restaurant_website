@@ -250,9 +250,17 @@ header .icons #menu {
 	padding-left: 9rem;
   z-index: 10000;
 }
-.home .home-slider .slide .content .content2 {
-  margin-left: 450px;
+.home .home-slider .slide .content .content2,
+.home .home-slider .slide .content .content3 {
+  margin-left: 200px;
   margin-top: 100px;
+}
+.home .home-slider .slide .content .content3 {
+  margin-top: 200px;
+}
+.home .home-slider .slide .content .content4 {
+  text-align: left;
+  margin-top: 50px;
 }
 .home .home-slider .slide .content h3 {
 	color: #cdaa7c;

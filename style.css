@@ -248,6 +248,7 @@ header .icons #menu {
 .home .home-slider .slide .content {
 	text-align: center;
 	padding-left: 9rem;
+  z-index: 10000;
 }
 
 .home .home-slider .slide .content .content2 {
@@ -326,7 +327,9 @@ header .icons #menu {
 
 .about-heading, 
 .clients-heading,
-.review-heading {
+.gallery-heading,
+.review-heading,
+.reservation-heading {
   color: #c2703d48;
   font-weight: 900;
   text-transform: uppercase;
@@ -338,6 +341,16 @@ header .icons #menu {
 
 .review-heading {
   margin: 0;
+}
+
+.reservation-heading,
+.gallery-heading {
+  margin: 20px auto;
+  font-size: 100px;
+  margin-bottom: 60px;
+}
+.gallery-heading {
+  color: #ffffff65;
 }
 
 .about-imageContent {

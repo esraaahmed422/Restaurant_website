@@ -115,7 +115,7 @@ img {
   padding: 0 16rem;
 }
 
-/*Header style start*/
+/** Header style start **/
 header {
 	position: fixed;
 	top: 0;
@@ -208,9 +208,9 @@ header .icons #menu {
   top: 2rem; right: 3rem;
   font-size: 5rem;
 }
-/*Header style end*/
+/** Header style end **/
 
-/*Home style start*/
+/** Home style start **/
 .home .home-slider .slide {
 	display: flex;
 	align-items: center;
@@ -312,9 +312,58 @@ header .icons #menu {
 	height: 15px!important;
 	border-radius: 0!important;
 }
-/*Home style end*/
+/** Home style end **/
 
-/* About style start*/
+/** Level Food style start **/
+
+.section-container {
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.section-container h3 {
+  font-size: 45px;
+  margin: 35px;
+  color: #cda45e;
+}
+.section-container .container {
+  font-size: 16px;
+  max-width: 500px;
+  margin-inline: 3rem;
+  display: block;
+  line-height: 3rem;
+  margin-left: 150px;
+}
+.level-food {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 15rem;
+  padding: 0;
+  margin-left: -100px;
+}
+.level-food img {
+  width: 300px;
+  height: 350px;
+}
+.level-food a {
+  font-size: 30px;
+  text-align: center;
+  color: #1d1d23;
+  text-decoration: none;
+  display: block;
+  margin-block: 20px;
+}
+.level-food .level1,
+.level-food .level3 {
+  margin-top: -120px;
+}
+.level-food .level2 {
+  margin-top: 50px;
+}
+/** Level Food style end **/
+
+/** About style start **/
 .about .content-subtitle,
 .about .content-title,
 .about .content-description {
@@ -414,15 +463,21 @@ header .icons #menu {
 .about-link:hover .about-arrowIcon {
   margin-left: 4px;
 }
-/* About Style end*/
+/** About Style end **/
 
-/* why us Style start*/
+/** why us Style start **/
 .row {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  column-gap: 3rem;
-  padding: 0rem 0rem;
-  margin-left: -150px;
+  column-gap: 5rem;
+  padding: 0;
+  margin-left: -200px;
+}
+.row .box4, .row .box5 {
+  transform: translatex(180px);
+}
+.row .box5 {
+  transform: translate(250px);
 }
 .why-us .section-title p {
   margin-left: 50px;

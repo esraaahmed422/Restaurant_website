@@ -21,7 +21,7 @@ html {
 body {
   overflow-x: hidden;
   background-color: #FFF;
-  background-color: #faebd6; /*#edd8bd*/
+  background-color: #faebd6;
 }
   
 ::selection {
@@ -115,7 +115,10 @@ img {
   padding: 0 16rem;
 }
 
-/** Header style start **/
+/* ------------------------------------------- */
+/* Header style start */
+/* ------------------------------------------- */
+
 header {
 	position: fixed;
 	top: 0;
@@ -208,9 +211,15 @@ header .icons #menu {
   top: 2rem; right: 3rem;
   font-size: 5rem;
 }
-/** Header style end **/
 
-/** Home style start **/
+/* ------------------------------------------- */
+/* Header style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Home style start */
+/* ------------------------------------------- */
+
 .home .home-slider .slide {
 	display: flex;
 	align-items: center;
@@ -227,16 +236,16 @@ header .icons #menu {
   right: 0;
 }
 .home .home-slider .slide1 {
-	background: url(img/restaurant5.jpg);
+	background: url(../img/Home1.jpg);
 }
 .home .home-slider .slide2 {
-	background: url(img/restaurant3.jpg);
+	background: url(../img/Home2.jpg);
 }
 .home .home-slider .slide3 {
-	background: url(img/restaurant10.jpg);
+	background: url(../img/Home3.jpg);
 }
 .home .home-slider .slide4 {
-	background: url(img/restaurant7.jpg);
+	background: url(../img/Home4.jpg);
 }
 .home .home-slider .slide1,
 .home .home-slider .slide2,
@@ -312,58 +321,15 @@ header .icons #menu {
 	height: 15px!important;
 	border-radius: 0!important;
 }
-/** Home style end **/
 
-/** Level Food style start **/
+/* ------------------------------------------- */
+/* Home style end */
+/* ------------------------------------------- */
 
-.section-container {
-  margin: 50px;
-  padding: 30px;
-  text-align: center;
-  font-size: 30px;
-}
-.section-container h3 {
-  font-size: 45px;
-  margin: 35px;
-  color: #cda45e;
-}
-.section-container .container {
-  font-size: 16px;
-  max-width: 500px;
-  margin-inline: 3rem;
-  display: block;
-  line-height: 3rem;
-  margin-left: 150px;
-}
-.level-food {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  column-gap: 15rem;
-  padding: 0;
-  margin-left: -100px;
-}
-.level-food img {
-  width: 300px;
-  height: 350px;
-}
-.level-food a {
-  font-size: 30px;
-  text-align: center;
-  color: #1d1d23;
-  text-decoration: none;
-  display: block;
-  margin-block: 20px;
-}
-.level-food .level1,
-.level-food .level3 {
-  margin-top: -120px;
-}
-.level-food .level2 {
-  margin-top: 50px;
-}
-/** Level Food style end **/
+/* ------------------------------------------- */
+/* About style start */
+/* ------------------------------------------- */
 
-/** About style start **/
 .about .content-subtitle,
 .about .content-title,
 .about .content-description {
@@ -378,6 +344,7 @@ header .icons #menu {
 }
 
 .about-heading, 
+.Events-heading,
 .clients-heading,
 .gallery-heading,
 .review-heading,
@@ -449,6 +416,9 @@ header .icons #menu {
   text-align: center;
   margin-bottom: -5px;
 }
+.about-details {
+  transform: translateX(80px);
+}
 .about-buttons {
   column-gap: 2rem;
 }
@@ -463,9 +433,140 @@ header .icons #menu {
 .about-link:hover .about-arrowIcon {
   margin-left: 4px;
 }
-/** About Style end **/
 
-/** why us Style start **/
+/* ------------------------------------------- */
+/* About style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Features style start */
+/* ------------------------------------------- */
+
+.section-features .section-title {
+  width: 900px;
+  margin: 60px;
+  margin-top: -50px;
+  margin-left: 15%;
+  text-align: left;
+  line-height: 195%;
+  font-size: 23px;
+  font-weight: 300;
+  color: #2C3034;
+}
+.section-features .section-title span{
+  font-size: 30px;
+  font-weight: 500;
+  color: #cf7137;
+  text-decoration: underline;
+}
+.section-features .row {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 4rem;
+  padding: 0;
+}
+.section-features .box i {
+  font-size: 300%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 20px;
+}
+.section-features h3 {
+  font-weight: 390;
+  text-transform: uppercase;
+  font-size: 150%;
+  margin-bottom: 15px;
+}
+.section-features .box p {
+  font-size: 100%;
+  font-weight: 300;
+  line-height: 145%;
+  color: #333;
+}
+
+/* ------------------------------------------- */
+/* Features style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Level style start */
+/* ------------------------------------------- */
+
+.section-container {
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+.section-container h3 {
+  font-size: 45px;
+  margin: 35px;
+  color: #cda45e;
+}
+.section-container .container {
+  font-size: 16px;
+  max-width: 500px;
+  margin-inline: 3rem;
+  display: block;
+  line-height: 3rem;
+  margin-left: 150px;
+}
+.level-food {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 15rem;
+  padding: 0;
+  margin-left: -100px;
+}
+.level-food img {
+  width: 300px;
+  height: 350px;
+}
+.level-food a {
+  font-size: 30px;
+  text-align: center;
+  background-color: #b9b6b6;
+  padding: 10px;
+  color: #1d1d23;
+  text-decoration: none;
+  display: block;
+  margin-block: 10px;
+}
+.level-food a:hover {
+  background-color: #cf7137;
+  color: #fff;
+}
+.level-food .level1,
+.level-food .level3 {
+  margin-top: -120px;
+}
+.level-food .level2 a, 
+.level-food .level3 a {
+  width: 300px;
+}
+.level-food .level2 {
+  margin-top: 50px;
+}
+.level-food .level3 {
+  margin-left: -450px;
+}
+.level4, .level5 {
+  margin-top: -50px;
+}
+.level5 {
+  margin-left: 450px;
+}
+
+/* ------------------------------------------- */
+/* Level style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Why Us style start */
+/* ------------------------------------------- */
+
 .row {
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -520,15 +621,21 @@ header .icons #menu {
 .why-us .box:hover p {
   color: #fff;
 }
-/* why us Style send*/
 
-/* Menu Style start*/
+/* ------------------------------------------- */
+/* Why Us style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Menu style start */
+/* ------------------------------------------- */
+
 section {
   padding: 60px 0;
   overflow: hidden;
 }
 .section-bg {
-  background: url(img/background1.webp);
+  background: url(../img/background.webp);
   background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -609,9 +716,15 @@ section {
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.5);
 }
-/*Menu Style end*/
 
-/*Clients style start*/
+/* ------------------------------------------- */
+/* Menu style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Clients style start */
+/* ------------------------------------------- */
+
 .Clients .content-title,
 .Clients .content-description {
   text-align: left;
@@ -687,9 +800,179 @@ section {
 .Clients .Clients-imageContent:hover .chef-info {
 	top: 0;
 }
-/*Clients Style end*/
 
-/*Gallery style starts*/
+/* ------------------------------------------- */
+/* Clients style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Prices style start */
+/* ------------------------------------------- */
+
+.prices-title {
+  text-align: center;
+  font-size: 35px;
+  margin: 10px;
+  color: #cda45e;
+}
+.section-prices .row {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+  padding: 50px ;
+  margin-left: 0px;
+  margin-bottom: -100px;
+}
+.prices-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height: 520px;
+  margin-left: 5%;
+  box-shadow: 0 2px 2px #efefef;
+}
+.prices-box div {
+  padding: 15px;
+  margin: 20px;
+  border-bottom: 1px solid #C2703D;
+}
+.prices-box div:first-child {
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.prices-box div:last-child {
+  text-align: center;
+  border: 0;
+}
+.prices-box h3 {
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.plan-price {
+  text-align: center;
+  font-size: 350%;
+  margin-bottom: 20px;
+  font-weight: 100;
+  color: #e67e22;
+}
+.plan-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+.plan-price-meal {
+  font-size: 80%;
+}
+.prices-box ul {
+  margin: 5px;
+  line-height: 4rem;
+  list-style: none;
+}
+.prices-box ul .fa-check {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/* ------------------------------------------- */
+/* Prices style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Events style start */
+/* ------------------------------------------- */
+
+.Events .container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: (2, 1fr);
+  gap: 10px;
+}
+.Events-left {
+  margin-left: 60px;
+  margin-top: 20rem;
+  width: 500px;
+}
+
+.Events-left .section-title {
+  color: #C2703D;
+  text-align: left;
+  width: 700px;
+}
+.Events .Events-left h3 {
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #1d1d23;
+}
+.Events .Events-left span {
+  border-bottom: 2px solid #ffb03b;
+  color: #666;
+  font-size: 25px;
+  font-weight: 1000;
+  margin-bottom: 89px;
+}
+.Events-left p {
+  max-width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.Events-right { 
+  position: relative;
+  margin-top: -50rem;
+}
+.Events-right .img-box {
+  width: 40%;
+  max-height: 600px;
+  padding: 30px;
+  overflow: hidden;
+  transform: translatex(80rem);
+}
+.Events-img {
+  object-fit: cover;
+  animation: lazy-scaleUp 30s linear infinite;
+}
+@keyframes lazy-scaleUp {
+
+  0%,
+  100% { 
+    transform: scale(1); 
+  }
+  50%  { 
+    transform: scale(1.2); 
+  }
+
+}
+.abs-content-box {
+  background: hsl(0, 0%, 100%);
+  width: 45%;
+  position: absolute;
+  bottom: 20px;
+  left:  65rem;
+  padding: 15px;
+  text-align: center;
+  box-shadow: -2px -2px 10px hsla(0, 0%, 0%, 0.1);
+}
+.abs-content-box img {
+  width: 100%;
+  filter:grayscale(100%);
+}
+
+/* ------------------------------------------- */
+/* Events style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Gallery style start */
+/* ------------------------------------------- */
+
 .gallery {
   padding: 4rem 7%;
   background: #1d1d23;
@@ -722,9 +1005,99 @@ section {
 .inner-gallery .gallery-image:hover img {
   transform: scale(1.1);
 }
-/*Gallery style end*/
 
-/*Review style start*/
+/* ------------------------------------------- */
+/* Garllery style end */
+/* ------------------------------------------- */
+
+/*--------------------------------------------*/
+/* packages style start */
+/*--------------------------------------------*/
+
+.packages-left { 
+  transform: translate(100px,200px);
+  padding: 20px;
+  margin-top: 3rem;
+}
+.main-heading {
+  color: #C2703D;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+.packages-text {
+  color:  hsl(240, 9%, 51%);
+  width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.packages-left  .content{
+  padding:1.5rem;
+  padding-top: 0;
+}
+.packages-left .content p{
+  font-size: 2rem;
+  padding: .5rem 0;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  color: #666;
+  line-height: 1.7;
+  text-align: left;
+}
+.packages-right {
+  position: relative;
+  aspect-ratio: 2 / 3; 
+}
+.food-img {
+  position: absolute;
+  padding: 10px;
+  width: 22%;
+  height: 18%; /*25%*/
+  margin-top: -420px;
+}
+.food-1 {
+  top:  4%;
+  right: 27%;
+  animation: scaleUp 3s ease-in-out infinite;
+}
+.food-2 {
+  top: -2%;
+  right: 3%;
+  animation: scaleUp 2s ease-in-out infinite;
+}
+.food-3 {
+  top: 18%;
+  right:  3%;
+  animation: scaleUp 4s ease-in-out infinite;
+}
+.food-4 {
+  top: 24%;
+  right: 27%;
+  animation: scaleUp 4s ease-in-out infinite;
+}
+
+@keyframes scaleUp {
+
+  0%,
+  100% { transform: translateY(0) scale(1); }
+
+  50% { transform: translateY(-5px) scale(1.05);}
+
+}
+
+/* ------------------------------------------- */
+/* Packages style end */
+/* ------------------------------------------- */
+
+/* ------------------------------------------- */
+/* Review style start */
+/* ------------------------------------------- */
+
+.review {
+  margin-top: -160rem;
+}
 .review h3{
   text-align: center;
   color: #C2703D;
@@ -846,9 +1219,16 @@ section {
 .review .box-container .box .icon a .fa-comment {
   transform:rotatey(180deg);
 }
-/*Review style end*/
 
-/*reservation style start*/
+/* ------------------------------------------- */
+/* Review style end */
+/* ------------------------------------------- */
+
+
+/* ------------------------------------------- */
+/* Reservation style start */
+/* ------------------------------------------- */
+
 .reservation {
 	display: flex;
 	width: 100%;
@@ -856,7 +1236,7 @@ section {
 }
 .reservation .image {
 	width: 55%;
-	background: url(img/reservation4.jpg);
+	background: url(../img/reservation.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -889,4 +1269,7 @@ section {
 .reservation .form form input:placeholder {
 	color: #b7b3b3;
 }
-/*reservation style end*/
+
+/* ------------------------------------------- */
+/* Reservation style end */
+/* ------------------------------------------- */

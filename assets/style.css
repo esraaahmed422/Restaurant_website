@@ -359,7 +359,7 @@ header .icons #bars {
 	background: url(../img/Home3.jpg);
 }
 .home .home-slider .slide4 {
-	background: url(../img/Ways\ to\ Make\ Thanksgiving\ Less\ Stressful\ -\ Stress-Free\ Holiday\ Planning.jpg);
+	background: url(../img/Home4.jpg);
 }
 .home .home-slider .slide1,
 .home .home-slider .slide2,
@@ -1028,7 +1028,7 @@ header .icons #bars {
 
 .Team {
   background-color: #181818;
-  background-image: url(../img/shape-1.png);
+  background-image: url(../img/shape.png);
   background-repeat: no-repeat;
   background-size: 50vh;
 }
@@ -1124,7 +1124,7 @@ header .icons #bars {
 /* ------------------------------------------- */
 
 .section-prices .row {
-  background: url(../img/T&C\ Travel\ Guide_\ Best\ of\ Vail.jpg);
+  background: url(../img/background-prices.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1601,7 +1601,7 @@ header .icons #bars {
   padding-top: 150px;
   padding-bottom: 150px;
   margin-top: -1.5%;
-  background-image: url(../img/Menu.webp);
+  background-image: url(../img/News.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

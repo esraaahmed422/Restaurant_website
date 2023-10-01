@@ -459,8 +459,7 @@ header .icons #bars {
 .about-heading, 
 .fresh-heading,
 .gallery-heading,
-.review-heading,
-.reservation-heading {
+.review-heading {
   color: #c2703d48;
   font-weight: 900;
   text-transform: uppercase;
@@ -468,6 +467,7 @@ header .icons #bars {
   text-align: center;
   margin-bottom: 10rem;
   margin-top: -100px;
+  letter-spacing: 20px;
 }
 .review-heading {
   margin: 0;
@@ -538,11 +538,15 @@ header .icons #bars {
   color: #333;
   text-transform: uppercase;
 }
-.about-arrowIcon {
+.about-arrowIcon,
+.about-link .link-text {
   transition: 0.3s;
 }
 .about-link:hover .about-arrowIcon {
   margin-left: 4px;
+}
+.about-link .link-text:hover {
+  letter-spacing: .5px;
 }
 
 /* ------------------------------------------- */
@@ -1330,8 +1334,8 @@ header .icons #bars {
 /* ------------------------------------------- */
 
 .special .heading {
-  margin: 10% 0% 10% 35%;
-  font-size: 50px;
+  margin: 10% 0% 10% 25%;
+  font-size: 80px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: #cda45e;
@@ -1366,14 +1370,44 @@ header .icons #bars {
   border-radius: 50%;
   transform: translate(75px,-200px);
 }
-.special .product-price p {
+.special .prices {
+  background-color: #e67e22;
+  width: 125px;
+  height: 60px;
+  text-indent: 25px;
+  font-weight: 900;
+  margin-left: 210px; 
+  margin-top: -15px;
+  margin-bottom: 15px;
+  z-index: -1;
+}
+.special .prices::after {
+  content: "";
+  border: 31px solid #e67e22;
+  margin-left: -133px;
+  margin-top: -11px;
+  position: absolute;
+  border-color: transparent #e67e22 transparent transparent;
+  z-index: -1;
+}
+.special .prices::before {
+  content:"•";
+  color: #faebd6;
+  float: left;
+  margin-left: -35px;
+  margin-top: -20px;
+  font-size: 40px;
+  z-index: 1;
+}
+.special .product-price span {
   display: inline-block;
-  font-size: 15px;
-  font-weight: 400;
-  margin-top: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
 }
 .special .box-container .box h3 {
   font-size: 3rem;
+  font-family: playfairdisplay;
   color: #e67e22;
 }
 .special .box-container .box p {
@@ -1381,91 +1415,11 @@ header .icons #bars {
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+  text-align: left;
 }
 
 /* ------------------------------------------- */
 /* special style end */
-/* ------------------------------------------- */
-
-/*--------------------------------------------*/
-/* packages style start */
-/*--------------------------------------------*/
-
-.packages-left { 
-  transform: translate(100px,200px);
-  padding: 20px;
-  margin-top: 3rem;
-}
-.main-heading {
-  color: #C2703D;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -2px;
-  margin-bottom: 30px;
-}
-.packages-text {
-  color:  hsl(240, 9%, 51%);
-  width: 600px;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-.packages-left  .content{
-  padding:1.5rem;
-  padding-top: 0;
-}
-.packages-left .content p{
-  font-size: 2rem;
-  padding: .5rem 0;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  color: #666;
-  line-height: 1.7;
-  text-align: left;
-}
-.packages-right {
-  position: relative;
-  aspect-ratio: 2 / 3; 
-}
-.food-img {
-  position: absolute;
-  padding: 10px;
-  width: 22%;
-  height: 18%;
-  margin-top: -420px;
-}
-.food-1 {
-  top:  4%;
-  right: 27%;
-  animation: scaleUp 3s ease-in-out infinite;
-}
-.food-2 {
-  top: -2%;
-  right: 3%;
-  animation: scaleUp 2s ease-in-out infinite;
-}
-.food-3 {
-  top: 18%;
-  right:  3%;
-  animation: scaleUp 4s ease-in-out infinite;
-}
-.food-4 {
-  top: 24%;
-  right: 27%;
-  animation: scaleUp 4s ease-in-out infinite;
-}
-
-@keyframes scaleUp {
-
-  0%,
-  100% { transform: translateY(0) scale(1); }
-
-  50% { transform: translateY(-5px) scale(1.05);}
-
-}
-
-/* ------------------------------------------- */
-/* Packages style end */
 /* ------------------------------------------- */
 
 /* ------------------------------------------- */
@@ -1473,7 +1427,7 @@ header .icons #bars {
 /* ------------------------------------------- */
 
 .review {
-  margin-top: -150rem;
+  margin-top: 10rem;
 }
 .review .box-container{
   display: grid;
